@@ -9,7 +9,7 @@ pipeline {
                     sh 'mvn clean compile'
                 }
             }
-        }
+        
 
         stage ('Testing Stage') {
 
@@ -18,7 +18,7 @@ pipeline {
                     sh 'mvn test'
                 }
             }
-        }
+        
 
 
         stage ('install Stage') {
@@ -28,5 +28,5 @@ pipeline {
                 }
             }
         
-    
+    }
 
